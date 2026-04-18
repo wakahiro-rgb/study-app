@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jukugi Master - Section 10 分詞 究極完成版</title>
+    <title>Jukugi Master - Section 20 知覚動詞・使役動詞 究極完成版</title>
     <style>
         :root {
             --bg: #f4f7f9; --card: #ffffff; --primary: #1e293b;
@@ -67,10 +67,10 @@
         
         .answer-zone { display: inline-flex; flex-wrap: wrap; gap: 0 6px; background: #fff; border-bottom: 2.5px solid var(--accent); padding: 0 5px; min-height: 1.6em; min-width: 150px; align-items: baseline; }
         .answer-word { font-size: 1.3rem; font-weight: 800; color: var(--accent); cursor: pointer; }
-        .extra-word { color: #8b5cf6; } /* 追加された単語は少し色を変える */
+        .extra-word { color: #8b5cf6; }
 
         .inline-input { border: none; border-bottom: 2px solid #cbd5e1; outline: none; text-align: center; font-size: 1.3rem; color: var(--accent); font-weight: bold; width: 120px; background: transparent; }
-        .full-input { width: 100%; padding: 15px; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1.25rem; outline: none; background: #f8fafc; box-sizing: border-box; margin-top: 10px; min-height: 100px; }
+        .full-input { width: 100%; padding: 15px; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1.25rem; outline: none; background: #f8fafc; box-sizing: border-box; margin-top: 5px; min-height: 60px; resize: vertical; }
 
         .btn-check { width: 100%; padding: 20px; background: var(--primary); color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; font-size: 1.2rem; margin-top: 15px; transition: 0.2s; }
         .feedback { margin-top: 20px; padding: 20px; border-radius: 12px; display: none; border-left: 6px solid #ddd; }
@@ -98,590 +98,478 @@
 <div class="container">
     <div id="incorrect-summary" class="summary-card"><div id="incorrect-list"></div></div>
     <div class="progress-card">
-        <h1 style="margin:0; font-size: 1.5rem;">Section 10 分詞</h1>
-        <div id="progress-text" style="font-weight: bold; margin-top: 10px; color: var(--accent);">0 / 72</div>
+        <h1 style="margin:0; font-size: 1.5rem;">Section 20 知覚動詞・使役動詞</h1>
+        <div id="progress-text" style="font-weight: bold; margin-top: 10px; color: var(--accent);">0 / 52</div>
         <div class="bar-bg"><div id="progress-fill"></div></div>
     </div>
     <div id="workbook-body"></div>
 </div>
 <script>
 const workbookData = [
+  // --- 練成問題 1 ---
   {
-    "id": "p78-r1-1",
+    "id": "p144-r1-1",
     "sectionName": "練成問題 1",
     "type": "choice",
-    "text": "(1) The girl [[ ]] in front of the mirror is my sister.<br>ア is sitting イ sitting ウ sits",
+    "text": "次の日本文の意味を表す正しい英文をそれぞれ1つずつ選び、記号で答えなさい。<br>(1) わたしは彼女が赤ん坊の世話をするのを見ました。<br>ア I saw her to take care of her baby.<br>イ I saw her take care of her baby.<br>ウ I saw her took care of her baby.",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。修飾される名詞と分詞は能動的な関係。\n2.【YouTubeソース】補足論理：「鏡の前に座っている」という2語以上のまとまりであるため、名詞girlの後ろからing形（能動）を配置して修飾する。"
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 原形不定詞 の構文により、「Oが〜するのを見る」という能動的な動作の全体を表す。\n2.【YouTubeソース】補足論理：第5文型（SVOC）の核心として、目的語と補語の間に主語・述語の論理関係が成立し、原形不定詞を用いて客観的な事実を描写する。"
   },
   {
-    "id": "p78-r1-2",
+    "id": "p144-r1-2",
     "sectionName": "練成問題 1",
     "type": "choice",
-    "text": "(2) We visited the temple [[ ]] 500 years ago.<br>ア to build イ building ウ built",
+    "text": "次の日本文の意味を表す正しい英文をそれぞれ1つずつ選び、記号で答えなさい。<br>(2) 彼はわたしたちを夜中まで働かせました。<br>ア He made us to work until midnight.<br>イ He made us worked until midnight.<br>ウ He made us work until midnight.",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["ウ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。修飾される名詞と分詞は受動的な関係。\n2.【YouTubeソース】補足論理：「500年前に建てられた」という2語以上のまとまりであるため、名詞templeの後ろから過去分詞（受動）を配置して修飾する。"
+    "explanation": "1.【塾技】文法論理：使役動詞 make + O + 原形不定詞 の構文により、「（強制的に）Oに〜させる」という意味を表す。\n2.【YouTubeソース】補足論理：使役動詞makeは対象に強い影響を与え、目的語が補語の動作を行う因果関係を構築する第5文型構造。"
   },
   {
-    "id": "p78-r1-3",
+    "id": "p144-r1-3",
     "sectionName": "練成問題 1",
     "type": "choice",
-    "text": "(3) The languages [[ ]] in Canada are English and French.<br>ア speak イ spoke ウ spoken エ speaking オ to speak",
+    "text": "次の日本文の意味を表す正しい英文をそれぞれ1つずつ選び、記号で答えなさい。<br>(3) 彼女は財布を盗まれました。<br>ア She had her purse steal.<br>イ She had her purse stole.<br>ウ She had her purse stolen.",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["ウ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。言葉は「話される」という受動の関係。\n2.【YouTubeソース】補足論理：「カナダで話されている」というまとまりを作るため、名詞languagesの後ろに過去分詞spokenを配置する。"
+    "explanation": "1.【塾技】文法論理：使役・被害を表す have + O + 過去分詞 の構文により、「Oを〜される」という被害状況を表す。\n2.【YouTubeソース】補足論理：目的語（her purse）は「盗まれる」対象であるため、受動関係を示す過去分詞（stolen）が補語として適用される。"
   },
   {
-    "id": "p78-r1-4",
+    "id": "p144-r1-4",
     "sectionName": "練成問題 1",
     "type": "choice",
-    "text": "(4) Look at the girl [[ ]] to an American.<br>ア speak イ spoke ウ spoken エ speaking",
-    "answers": ["エ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少女が「話しかけている」という能動の関係。\n2.【YouTubeソース】補足論理：「アメリカ人に話しかけている」という2語以上のまとまりであるため、名詞girlの後方に現在分詞speakingを配置する。"
-  },
-  {
-    "id": "p78-r1-5",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(5) The story [[ ]] by my father was interesting.<br>ア tells イ told ウ telling エ to tell",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。物語は「語られる」という受動の関係。\n2.【YouTubeソース】補足論理：「父によって語られた」という受動のまとまりであるため、名詞storyの後ろに過去分詞toldを配置する。"
-  },
-  {
-    "id": "p78-r1-6",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(6) The man [[ ]] by the piano is our teacher.<br>ア standing イ stands ウ stood",
+    "text": "次の日本文の意味を表す正しい英文をそれぞれ1つずつ選び、記号で答えなさい。<br>(4) わたしは彼にお茶をいれてもらいました。<br>ア I got him to make tea.<br>イ I got him make tea.<br>ウ I got him made tea.",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["ア"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。男性が「立っている」という能動の関係。\n2.【YouTubeソース】補足論理：「ピアノのそばに立っている」というまとまりであるため、名詞manの後方に現在分詞standingを配置する。"
+    "explanation": "1.【塾技】文法論理：使役動詞 get + O + to不定詞 の構文により、「（説得などして）Oに〜させる・してもらう」を表す。\n2.【YouTubeソース】補足論理：getはmakeやhaveと異なり、目的格補語として原形不定詞ではなくto不定詞を要求する厳格な語法規則を持つ。"
+  },
+
+  // --- 練成問題 2 (複数入力対応版) ---
+  {
+    "id": "p144-r2-1",
+    "sectionName": "練成問題 2",
+    "type": "translation",
+    "text": "次の英文を日本語に直しなさい。<br>(1) ① He heard someone calling his name.<br>② He heard his name called.",
+    "answers": [
+      "彼はだれかが自分の名前を呼んでいるのを聞きました。",
+      "彼は自分の名前が呼ばれるのを聞きました。"
+    ],
+    "explanation": "①【塾技】知覚動詞 hear + O + 現在分詞 により、「Oが〜している（進行中の動作）を聞く」を表します。\n②【塾技】知覚動詞 hear + O + 過去分詞 により、「Oが〜される（受動）のを聞く」を表します。"
   },
   {
-    "id": "p78-r1-7",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(7) The tower [[ ]] over there is a famous temple.<br>ア seeing イ seen ウ see",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。塔は「見られる」という受動の関係。\n2.【YouTubeソース】補足論理：「あそこに見える」は「あそこに見られる」と解釈し、名詞towerの後ろに過去分詞seenを配置する。"
+    "id": "p144-r2-2",
+    "sectionName": "練成問題 2",
+    "type": "translation",
+    "text": "次の英文を日本語に直しなさい。<br>(2) ① His parents made him study at college.<br>② His parents let him study at college.",
+    "answers": [
+      "彼の両親は彼に大学で勉強をさせました。",
+      "[彼の両親は彼に大学で勉強するのをお許ししました。 / 彼の両親は彼に大学で勉強するのを許しました。]"
+    ],
+    "explanation": "①【塾技】使役動詞 make + O + 原形不定詞 により、強制的な使役（〜させる）を表します。\n②【塾技】使役動詞 let + O + 原形不定詞 により、許可（望みどおりに〜させる）を表します。"
   },
   {
-    "id": "p78-r1-8",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(8) The mountain [[ ]] with snow is beautiful.<br>ア cover イ covered ウ covering",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。山は「覆われる」という受動の関係。\n2.【YouTubeソース】補足論理：「雪で覆われている」という受動のまとまりを作るため、名詞mountainの後ろに過去分詞coveredを配置する。"
+    "id": "p144-r2-3",
+    "sectionName": "練成問題 2",
+    "type": "translation",
+    "text": "次の英文を日本語に直しなさい。<br>(3) ① I had him cut the tree.<br>② I got my hair cut.",
+    "answers": [
+      "わたしは彼にその木を切らせました。",
+      "わたしは髪の毛を切ってもらいました。"
+    ],
+    "explanation": "①【塾技】使役動詞 have + O + 原形不定詞 により、当然の義務として「Oに〜させる・してもらう」を表します。\n②【塾技】使役動詞 get + O + 過去分詞 により、「Oを〜してもらう」という使役の完了状態を表します。"
   },
   {
-    "id": "p78-r1-9",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(9) Ned has a watch [[ ]] in Japan.<br>ア make イ made ウ making",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。時計は「作られる」という受動の関係。\n2.【YouTubeソース】補足論理：「日本で作られた」という受動のまとまりであるため、名詞watchの後ろに過去分詞madeを配置する。"
+    "id": "p144-r2-4",
+    "sectionName": "練成問題 2",
+    "type": "translation",
+    "text": "次の英文を日本語に直しなさい。<br>(4) ① Mr. Brown saw his son enter the house.<br>② John was seen to enter the house by his father.",
+    "answers": [
+      "ブラウンさんは彼の息子がその家に入るのを見ました。",
+      "ジョンは彼の父によってその家に入るのを見られました。"
+    ],
+    "explanation": "①【塾技】知覚動詞 see + O + 原形不定詞 により、「Oが〜する動作全体を見る」ことを表します。\n②【塾技】知覚動詞の受動態では、原形不定詞がto不定詞（to enter）に変化する厳格な規則があります。"
   },
+
+  // --- 練成問題 3 ---
   {
-    "id": "p78-r1-10",
-    "sectionName": "練成問題 1",
+    "id": "p145-r3-1",
+    "sectionName": "練成問題 3",
     "type": "choice",
-    "text": "(10) There was a [[ ]] cup on the desk.<br>ア break イ broken ウ breaking",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する過去分詞。コップは「割られる」という受動の関係。\n2.【YouTubeソース】補足論理：1語の修飾語であるため名詞cupの前に置かれ、受動の過去分詞brokenが適用される。"
-  },
-  {
-    "id": "p78-r1-11",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(11) I made up my mind to help the [[ ]] animal.<br>ア die イ died ウ dead エ dying",
-    "answers": ["エ"],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する現在分詞。「死にかけている」という進行中の状態を表す。\n2.【YouTubeソース】補足論理：1語で名詞animalを修飾し、今まさに進行している能動的な状態を示すため現在分詞dyingが適用される。deadは形容詞（死んだ）であるため文脈に合わない。"
-  },
-  {
-    "id": "p78-r1-12",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(12) Look! He hit another homer! - Oh, that's really [[ ]].<br>ア surprise イ surprising ウ surprised エ to be surprised",
-    "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：主語を説明する補語としての分詞（SVC）。主語that（出来事）は「人を驚かせる側」であるため現在分詞を用いる。\n2.【YouTubeソース】補足論理：感情を表す動詞は「〜させる」が原義であり、事象が人に影響を与える能動的関係には現在分詞surprisingを選択する。"
-  },
-  {
-    "id": "p78-r1-13",
-    "sectionName": "練成問題 1",
-    "type": "choice",
-    "text": "(13) The soccer game [[ ]].<br>ア played yesterday was exciting イ playing yesterday was exciting ウ played yesterday was excited エ playing yesterday was excited",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(1) I saw her [[ ]] the window.<br>ア open イ opened ウ to open",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["ア"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞（played）と、補語になる現在分詞（exciting）の組み合わせ。\n2.【YouTubeソース】補足論理：試合は「行われる」のでplayedで名詞を後置修飾し、試合は「人を興奮させる側」なので述語はwas excitingとする。"
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 原形不定詞 の構文。OとCの間には能動の主述関係が成り立つ。\n2.【YouTubeソース】補足論理：第5文型において、彼女が窓を開けるという能動的行為全体を捉えるため、原形の動詞が補語として適用される。"
   },
   {
-    "id": "p78-r1-14",
-    "sectionName": "練成問題 1",
+    "id": "p145-r3-2",
+    "sectionName": "練成問題 3",
     "type": "choice",
-    "text": "(14) I'm sorry to have kept you [[ ]] so long.<br>ア wait イ waited ウ waiting",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(2) Did you see a man [[ ]] by a car over there?<br>ア hit イ hitting ウ to hit",
+    "choices": ["ア", "イ", "ウ"],
+    "answers": ["ア"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 過去分詞 の構文。「男が車にひかれる」という受動関係であるため過去分詞（hit）を用いる。\n2.【YouTubeソース】補足論理：目的語（a man）は動作を受ける対象であるため、受動の意味を内包する過去分詞を配置して構造を完結させる。"
+  },
+  {
+    "id": "p145-r3-3",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(3) Have you ever [[ ]] Mary playing the piano?<br>ア heard イ asked ウ made エ told",
+    "choices": ["ア", "イ", "ウ", "エ"],
+    "answers": ["ア"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 hear + O + 現在分詞 の構文により「Oが〜しているのを聞く」を表す。\n2.【YouTubeソース】補足論理：メアリーがピアノを弾いているという進行中の動作を知覚する論理から、動詞はheardが論理的必然として選択される。"
+  },
+  {
+    "id": "p145-r3-4",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(4) The teacher made the students [[ ]] home early.<br>ア go イ going ウ to go",
+    "choices": ["ア", "イ", "ウ"],
+    "answers": ["ア"],
+    "explanation": "1.【塾技】文法論理：使役動詞 make + O + 原形不定詞 の構文により、「強制的に〜させる」を表す。\n2.【YouTubeソース】補足論理：使役動詞makeは目的格補語に必ず原形不定詞を伴い、生徒たちに帰宅させるという因果関係を構築する。"
+  },
+  {
+    "id": "p145-r3-5",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(5) I'll have my sister [[ ]] your lunch.<br>ア make イ made ウ to make",
+    "choices": ["ア", "イ", "ウ"],
+    "answers": ["ア"],
+    "explanation": "1.【塾技】文法論理：使役動詞 have + O + 原形不定詞 の構文。「姉に昼食を作らせる・作ってもらう」を表す。\n2.【YouTubeソース】補足論理：身内や当然頼める相手に対する使役行為であり、目的格補語として原形不定詞が要求される。"
+  },
+  {
+    "id": "p145-r3-6",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(6) I'll let him [[ ]] to the movies.<br>ア go イ to go ウ going",
+    "choices": ["ア", "イ", "ウ"],
+    "answers": ["ア"],
+    "explanation": "1.【塾技】文法論理：使役動詞 let + O + 原形不定詞 の構文。「望みどおりに〜させてやる、許可する」を表す。\n2.【YouTubeソース】補足論理：相手の意思を尊重した行動の許可を示す動詞letは、他使役動詞と同様に原形不定詞を補語とする。"
+  },
+  {
+    "id": "p145-r3-7",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(7) I got him [[ ]] my watch yesterday.<br>ア repair イ to repair ウ repaired",
+    "choices": ["ア", "イ", "ウ"],
+    "answers": ["イ"],
+    "explanation": "1.【塾技】文法論理：使役動詞 get + O + to不定詞 の構文。「（説得などして）Oに〜させる・してもらう」を表す。\n2.【YouTubeソース】補足論理：getは使役の意味を持ちながらも、原形不定詞ではなくto不定詞を目的格補語として伴うという特異な文法規則がある。"
+  },
+  {
+    "id": "p145-r3-8",
+    "sectionName": "練成問題 3",
+    "type": "choice",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(8) You had better have your bad tooth [[ ]] out.<br>ア pull イ pulling ウ pulled",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["ウ"],
-    "explanation": "1.【塾技】文法論理：目的格補語になる分詞。keep + O + doing（Oを～させておく）の構文。\n2.【YouTubeソース】補足論理：目的語youと分詞の間には「あなたが待っている」という能動的な主述関係が成り立つため、現在分詞waitingが適用される。"
+    "explanation": "1.【塾技】文法論理：使役動詞 have + O + 過去分詞 の構文。「Oを〜してもらう」を表し、歯は「抜かれる」対象である。\n2.【YouTubeソース】補足論理：目的語（your bad tooth）と動作（pull out）の間には受動の主述関係が存在するため、過去分詞が必然的に適用される。"
   },
   {
-    "id": "p78-r1-15",
-    "sectionName": "練成問題 1",
+    "id": "p145-r3-9",
+    "sectionName": "練成問題 3",
     "type": "choice",
-    "text": "(15) I found her [[ ]] at the door.<br>ア smiled イ smiling ウ to smile",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(9) Tom could not make himself [[ ]] in English.<br>ア understand イ understood ウ to understand エ understanding",
+    "choices": ["ア", "イ", "ウ", "エ"],
     "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：目的格補語になる分詞。find + O + doing（Oが～しているのがわかる）の構文。\n2.【YouTubeソース】補足論理：目的語herと分詞の間に「彼女がほほえんでいる」という能動的な主述関係が成り立つため、現在分詞smilingが適用される。"
+    "explanation": "1.【塾技】文法論理：make oneself understood で「自分の話（自身）を理解してもらう」という重要慣用表現。\n2.【YouTubeソース】補足論理：「自分自身が相手に理解される状態を作る」という受動的論理構造から、過去分詞understoodが選択される。"
   },
   {
-    "id": "p78-r1-16",
-    "sectionName": "練成問題 1",
+    "id": "p145-r3-10",
+    "sectionName": "練成問題 3",
     "type": "choice",
-    "text": "(16) My mother is busy now [[ ]] our lunch.<br>ア prepare イ preparing ウ to prepare エ prepared",
+    "text": "次の( )に入る最も適当な語(句)をそれぞれ1つずつ選び、記号で答えなさい。<br>(10) I was made [[ ]] the hard work by him.<br>ア do イ to do ウ doing",
+    "choices": ["ア", "イ", "ウ"],
     "answers": ["イ"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。be busy ~ing（～するのに忙しい）。\n2.【YouTubeソース】補足論理：be busyの後ろには動作の進行を示すing形を続けるという定型的な表現構造に従う。"
+    "explanation": "1.【塾技】文法論理：使役動詞 make の受動態。能動態での原形不定詞は、受動態では必ずto不定詞へと変化する。\n2.【YouTubeソース】補足論理：文法構造の均衡を維持するため、受動態へ変換された使役動詞や知覚動詞の補語にはtoが復活するという絶対規則。"
+  },
+  // --- 練成問題 4 ---
+  {
+    "id": "p145-r4-1",
+    "sectionName": "練成問題 4",
+    "type": "fill",
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(1) わたしはだれかがわたしの名前を呼ぶのを聞いた。<br>I heard [[ ]] [[ ]] [[ ]] name.",
+    "answers": ["[someone / somebody]", "call", "my"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 hear + O + 原形不定詞 の構文で「Oが〜するのを聞く」を表す。\n2.【YouTubeソース】補足論理：目的語に不特定の人物（someone）を置き、原形不定詞（call）を接続することで能動の主述関係を構築する。"
   },
   {
-    "id": "p78-r2-1",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-2",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(1) The boy [[ ]] on the slope is my brother. ( ski )",
-    "answers": ["skiing"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少年が「スキーをしている」という能動の関係。\n2.【YouTubeソース】補足論理：「斜面でスキーをしている」という2語以上のまとまりであるため、名詞boyの後ろからing形（能動）で修飾する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(2) わたしはジョンといっしょに彼が通りを走っているのを見かけました。<br>I saw [[ ]] [[ ]] [[ ]] John along the street.",
+    "answers": ["him", "running", "with"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 現在分詞 の構文で「Oが〜している（進行中の動作）を見る」を表す。\n2.【YouTubeソース】補足論理：目的語（him）の進行中の行為を描写するため現在分詞（running）を用い、同伴者を示す前置詞withで繋ぐ論理。"
   },
   {
-    "id": "p78-r2-2",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-3",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(2) The gentleman [[ ]] at the door is my uncle. ( stand )",
-    "answers": ["standing"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。紳士が「立っている」という能動の関係。\n2.【YouTubeソース】補足論理：「ドアのところに立っている」というまとまりで名詞gentlemanを後置修飾するため、現在分詞standingを配置する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(3) 机の下で、何か黒いものが動いているのが見えますか。<br>Can you see [[ ]] [[ ]] [[ ]] under the desk?",
+    "answers": ["something", "black", "moving"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 現在分詞 の構文。something + 形容詞（black）の語順規則。\n2.【YouTubeソース】補足論理：代名詞somethingを後置修飾する形容詞blackを配置し、さらにその進行中の動作を示す現在分詞movingを補語とする複合的構造。"
   },
   {
-    "id": "p78-r2-3",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-4",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(3) The language [[ ]] in Australia is English. ( speak )",
-    "answers": ["spoken"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。言語は「話される」という受動の関係。\n2.【YouTubeソース】補足論理：「オーストラリアで話されている」という受動のまとまりであるため、名詞languageの後ろに過去分詞spokenを配置する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(4) 先生は彼女にその辞書を使うことを許しました。<br>The teacher [[ ]] [[ ]] [[ ]] the dictionary.",
+    "answers": ["let", "her", "use"],
+    "explanation": "1.【塾技】文法論理：使役動詞 let + O + 原形不定詞 の構文で「Oに〜するのを許す・許可する」を表す。\n2.【YouTubeソース】補足論理：対象の意思や欲求を妨げずに行動を許可するletの語法に従い、目的語と原形不定詞の主述関係を形成する。"
   },
   {
-    "id": "p78-r2-4",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-5",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(4) The baseball game [[ ]] yesterday was a big one. ( play )",
-    "answers": ["played"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。試合は「行われる」という受動の関係。\n2.【YouTubeソース】補足論理：「きのう行われた」という受動のまとまりであるため、名詞gameの後ろに過去分詞playedを配置する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(5) ご両親はあなたを外国へ行かせてはくれないでしょう。<br>Your parents won't [[ ]] [[ ]] [[ ]] abroad.",
+    "answers": ["let", "you", "go"],
+    "explanation": "1.【塾技】文法論理：使役動詞 let + O + 原形不定詞 の構文の否定形。\n2.【YouTubeソース】補足論理：許可の意図を持つletを否定することで「行かせてくれない」という禁止や拒絶のニュアンスを第5文型構造で表現する。"
   },
   {
-    "id": "p78-r2-5",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-6",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(5) The girl [[ ]] tennis with Bob is my sister. ( play )",
-    "answers": ["playing"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少女が「テニスをしている」という能動の関係。\n2.【YouTubeソース】補足論理：「ボブとテニスをしている」というまとまりで名詞girlを後置修飾するため、現在分詞playingを配置する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(6) ぼくは髪を切ってもらわなければなりません。<br>I have to [[ ]] my hair [[ ]].",
+    "answers": ["[have / get]", "cut"],
+    "explanation": "1.【塾技】文法論理：使役・被害動詞 have [get] + O + 過去分詞 の構文で「Oを〜してもらう」を表す。\n2.【YouTubeソース】補足論理：自分の髪（my hair）は他者によって「切られる」対象であるため、目的格補語として過去分詞cutが論理的に要求される。"
   },
   {
-    "id": "p78-r2-6",
-    "sectionName": "練成問題 2",
+    "id": "p145-r4-7",
+    "sectionName": "練成問題 4",
     "type": "fill",
-    "text": "(6) Look at the [[ ]] baby. ( sleep )",
-    "answers": ["sleeping"],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する現在分詞。赤ちゃんが「眠っている」という能動の関係。\n2.【YouTubeソース】補足論理：1語で名詞babyを修飾し、進行中の状態を示すため現在分詞sleepingを名詞の前に配置する。"
+    "text": "次の日本文に合う英文になるように、空欄に適する語を書きなさい。<br>(7) あなたはどうしてそう考えるのですか。<br>What [[ ]] [[ ]] think so?",
+    "answers": ["makes", "you"],
+    "explanation": "1.【塾技】文法論理：無生物主語構文 What makes O + 原形不定詞? で「何がOに〜させるのか（なぜ〜するのか）」を表す。\n2.【YouTubeソース】補足論理：原因・理由を問うために疑問詞Whatを主語とし、使役動詞makeによって他動的な因果関係構造を構築する定型表現。"
+  },
+
+  // --- 発展問題 1 ---
+  {
+    "id": "p146-h1-1",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(1) 彼女はだれかが部屋に隠れているのを感じました。<br>[[ ]]。",
+    "pool": ["hiding", "felt", "in", "someone", "the", "room", "She"],
+    "answers": ["She felt someone hiding in the room."],
+    "explanation": "1.【塾技】文法論理：知覚動詞 feel + O + 現在分詞 の構文で「Oが〜しているのを感じる」を表す。\n2.【YouTubeソース】補足論理：目的語（someone）と現在分詞（hiding）の間に能動的進行の主述関係を構築する第5文型構造。"
   },
   {
-    "id": "p78-r2-7",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(7) The girl [[ ]] a letter at the desk is my sister. ( write )",
-    "answers": ["writing"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少女が「書いている」という能動の関係。\n2.【YouTubeソース】補足論理：「机で手紙を書いている」というまとまりで名詞girlを後置修飾するため、現在分詞writingを配置する。"
+    "id": "p146-h1-2",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(2) わたしはトムが木の下に横になっているのを見かけた。<br>[[ ]]。",
+    "pool": ["Tom", "the tree", "found", "lying", "under", "I"],
+    "answers": ["I found Tom lying under the tree."],
+    "explanation": "1.【塾技】文法論理：知覚・発見を表す find + O + 現在分詞 の構文で「Oが〜しているのを見つける・気づく」を表す。\n2.【YouTubeソース】補足論理：トムが横たわっている状態を発見するという能動的関係を、現在分詞（lying）によって客観的に描写する論理。"
   },
   {
-    "id": "p78-r2-8",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(8) Show me the letter [[ ]] in French. ( write )",
-    "answers": ["written"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。手紙は「書かれる」という受動の関係。\n2.【YouTubeソース】補足論理：「フランス語で書かれた」という受動のまとまりであるため、名詞letterの後ろに過去分詞writtenを配置する。"
+    "id": "p146-h1-3",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(3) あなたたちは彼が悪口を言われているのを聞いたことがありますか。<br>[[ ]] by others?",
+    "pool": ["ever", "heard", "you", "of", "spoken", "him", "have", "ill"],
+    "answers": ["Have you ever heard him spoken ill of"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 hear + O + 過去分詞 の構文。speak ill of ~（〜の悪口を言う）の受動態。\n2.【YouTubeソース】補足論理：彼（him）が他者から悪口を「言われる」という受動の主述関係を成立させるため、群動詞の過去分詞形（spoken ill of）を配置する。"
   },
   {
-    "id": "p78-r2-9",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(9) He is a famous writer [[ ]] all over the world. ( know )",
-    "answers": ["known"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。作家は「知られている」という受動の関係。\n2.【YouTubeソース】補足論理：「世界中で知られている」という受動のまとまりであるため、名詞writerの後ろに過去分詞knownを配置する。"
+    "id": "p146-h1-4",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(4) 彼女に後ほど電話をかけなおさせましょうか。<br>[[ ]]？",
+    "pool": ["back", "call", "shall", "you", "later", "her", "have", "I"],
+    "answers": ["Shall I have her call you back later"],
+    "explanation": "1.【塾技】文法論理：使役動詞 have + O + 原形不定詞 の構文。「Oに〜させる・してもらう」を表す。\n2.【YouTubeソース】補足論理：相手の意向を尋ねるShall I ~? の構造に、当然の行為として要求する使役のhaveを組み込んだ複合的な依頼・提案表現。"
   },
   {
-    "id": "p78-r2-10",
-    "sectionName": "練成問題 2",
+    "id": "p146-h1-5",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(5) あなたはご主人にたばこをやめてもらうことができますか。<br>[[ ]]？",
+    "pool": ["your", "can", "to", "you", "get", "stop", "husband", "smoking"],
+    "answers": ["Can you get your husband to stop smoking"],
+    "explanation": "1.【塾技】文法論理：使役動詞 get + O + to不定詞 の構文で「（説得して）Oに〜させる」を表す。\n2.【YouTubeソース】補足論理：説得や働きかけによって相手に行動を促すgetは、文法規則として目的格補語にto不定詞を厳格に要求する。"
+  },
+  {
+    "id": "p146-h1-6",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(6) わたしはそのパーティーで歌を歌わされた。〔1語不足〕<br>[[ ]]。",
+    "pool": ["song", "at", "I", "the", "made", "party", "sing", "was", "a"],
+    "answers": ["I was made to sing a song at the party."],
+    "explanation": "1.【塾技】文法論理：使役動詞 make の受動態。能動態の原形不定詞は受動態でto不定詞になる。不足語はto。\n2.【YouTubeソース】補足論理：行為を強制された事実を受動態で表現する際、文法的均衡を維持するため補語の動詞にtoが復活する絶対的規則。"
+  },
+  {
+    "id": "p146-h1-7",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(7) 彼女は年よりもずっと若く見えるように努めました。<br>[[ ]]。",
+    "pool": ["look", "really", "much", "she", "herself", "tried", "make", "was", "younger", "she", "to", "than"],
+    "answers": ["She tried to make herself look much younger than she really was."],
+    "explanation": "1.【塾技】文法論理：try to do と 使役動詞 make + O + 原形不定詞 の複合。比較級の強調（much）。\n2.【YouTubeソース】補足論理：自分自身（herself）が若く見える（look younger）状態を意図的に作り出す（make）という、再帰代名詞を目的語とした使役構造。"
+  },
+  {
+    "id": "p146-h1-8",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(8) この仕事を終わらせたらすぐにあなたのところに行きます。<br>I'll [[ ]]。",
+    "pool": ["as", "come", "you", "get", "I", "as", "this", "soon", "finished", "work", "to"],
+    "answers": ["come to you as soon as I get this work finished."],
+    "explanation": "1.【塾技】文法論理：as soon as 構文と、使役・完了を表す get + O + 過去分詞 の複合。\n2.【YouTubeソース】補足論理：仕事（this work）が「終わらされる」状態を獲得する（get）という受動的な結果の達成を、過去分詞（finished）によって論理的に構成する。"
+  },
+  {
+    "id": "p146-h1-9",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(9) あの背の高い男の人がだれなのかわたしに教えてください。<br>[[ ]]。",
+    "pool": ["who", "know", "man", "is", "that", "please", "tall", "me", "let"],
+    "answers": ["Please let me know who that tall man is."],
+    "explanation": "1.【塾技】文法論理：使役動詞 let + O + 原形不定詞 と間接疑問文の複合。「私に知らせて（教えて）」を表す let me know。\n2.【YouTubeソース】補足論理：相手の情報を共有するよう促すlet me knowの構文に、認識の対象である間接疑問文（who that tall man is）を名詞句として接続する。"
+  },
+  {
+    "id": "p146-h1-10",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(10) この薬を飲むと気分が良くなるでしょう。<br>[[ ]]。",
+    "pool": ["you", "this", "right", "make", "all", "medicine", "will", "feel"],
+    "answers": ["This medicine will make you feel all right."],
+    "explanation": "1.【塾技】文法論理：無生物主語構文 make + O + 原形不定詞 で「無生物がOに〜させる」を表す。\n2.【YouTubeソース】補足論理：薬という無生物が原因となり、結果として人間（you）の気分が良くなる（feel all right）という因果関係を他動性構造で表現する。"
+  },
+  {
+    "id": "p146-h1-11",
+    "sectionName": "発展問題 1",
+    "type": "reorder",
+    "text": "次の日本文の意味を表すように、[ ]内の語を並べかえなさい。ただし、句読点などは必要に応じて補うこと。<br>(11) 1時間歩いて空腹になってしまった。<br>[[ ]]。",
+    "pool": ["hungry", "me", "walk", "hour's", "made", "feel", "an"],
+    "answers": ["An hour's walk made me feel hungry."],
+    "explanation": "1.【塾技】文法論理：無生物主語構文 make + O + 原形不定詞。「1時間の歩行が私を空腹にさせた」が直訳。\n2.【YouTubeソース】補足論理：行動や出来事を主語に据え、それによって人間が特定の状態（feel hungry）に至るという英語特有の他動的因果論理である。"
+  },
+
+  // --- 発展問題 2 ---
+  {
+    "id": "p147-h2-1",
+    "sectionName": "発展問題 2",
     "type": "fill",
-    "text": "(10) The watches [[ ]] in Japan are very popular in foreign countries. ( make )",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Someone stole my watch yesterday.<br>ⓑ I [[ ]] my watch [[ ]] yesterday.",
+    "answers": ["[had / got]", "stolen"],
+    "explanation": "1.【塾技】文法論理：能動態の被害の文を、have [get] + O + 過去分詞 を用いた被害・受難の構文へ書き換える。\n2.【YouTubeソース】補足論理：自分を主語に置き、所有物（my watch）が他者によって「盗まれる」状態を被ったという論理構造を過去分詞で構成する。"
+  },
+  {
+    "id": "p147-h2-2",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ She saw me come out of the room.<br>ⓑ I was [[ ]] [[ ]] come out of the room by her.",
+    "answers": ["seen", "to"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 see の能動態の文を受動態へ書き換える。原形不定詞はto不定詞になる。\n2.【YouTubeソース】補足論理：能動態における補語としての原形動詞（come）は、受動態化による構造的要請から必ずtoを伴う形に復元されなければならない。"
+  },
+  {
+    "id": "p147-h2-3",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Tom let his son study abroad.<br>ⓑ Tom's son [[ ]] [[ ]] [[ ]] study abroad by Tom.",
+    "answers": ["was", "[allowed / permitted]", "to"],
+    "explanation": "1.【塾技】文法論理：使役動詞 let には受動態がないため、be allowed [permitted] to を用いて「許可された」という意味に書き換える。\n2.【YouTubeソース】補足論理：let自身の受動化が不可能であるという語法の制約を回避するため、同義の他動詞の受動態構造で論理的意味を代替・維持する。"
+  },
+  {
+    "id": "p147-h2-4",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ My father made me write the letter in English.<br>ⓑ I was [[ ]] [[ ]] [[ ]] the letter in English by my father.",
+    "answers": ["made", "to", "write"],
+    "explanation": "1.【塾技】文法論理：使役動詞 make の能動態の文を受動態へ書き換える。原形不定詞はto不定詞になる。\n2.【YouTubeソース】補足論理：行為を強制された事実を受動態で表現する際、文法的な均衡を保つため原形不定詞（write）にtoが復活する絶対的規則。"
+  },
+  {
+    "id": "p147-h2-5",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Bob saw her walking alone along the street.<br>ⓑ She [[ ]] [[ ]] [[ ]] alone along the street by Bob.",
+    "answers": ["was", "seen", "walking"],
+    "explanation": "1.【塾技】文法論理：知覚動詞 + O + 現在分詞 の能動態を受動態へ書き換える。現在分詞はそのまま残る。\n2.【YouTubeソース】補足論理：進行中の動作を示す現在分詞（walking）は、受動態に構造変換されてもその補語としての性質と形態を維持し続ける論理的特性がある。"
+  },
+  {
+    "id": "p147-h2-6",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ She was heard singing in the room.<br>ⓑ We [[ ]] [[ ]] singing in the room.",
+    "answers": ["heard", "her"],
+    "explanation": "1.【塾技】文法論理：知覚動詞の受動態の文を、Weなどの一般的な主語を用いた能動態の文へ書き換える。\n2.【YouTubeソース】補足論理：受動態の主語であったSheを目的格herへと戻し、知覚動詞heardと現在分詞singingの間に本来の能動的進行の主述関係を再構築する。"
+  },
+  {
+    "id": "p147-h2-7",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Show it to me.<br>ⓑ Let me [[ ]] it.",
+    "answers": ["see"],
+    "explanation": "1.【塾技】文法論理：Show（見せる）の命令文を、let + O + 原形不定詞 を用いて「私に見させて」という同意表現へ書き換える。\n2.【YouTubeソース】補足論理：対象の提示を命ずる表現から、自己の知覚行為（see）の許可を要求する間接的かつ定型的な使役構造への論理転換。"
+  },
+  {
+    "id": "p147-h2-8",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Why did you go there?<br>ⓑ [[ ]] made you go there?",
+    "answers": ["What"],
+    "explanation": "1.【塾技】文法論理：Whyによる理由を尋ねる疑問文を、What makes O + 原形不定詞（何が〜させるのか）の無生物主語構文へ書き換える。\n2.【YouTubeソース】補足論理：行為の理由を問う表現を、原因（What）が主語となり人間の行動を強制する他動的因果構造へと圧縮する英語特有の変換論理。"
+  },
+  {
+    "id": "p147-h2-9",
+    "sectionName": "発展問題 2",
+    "type": "fill",
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ Why did she change her mind?<br>ⓑ What [[ ]] her change her mind?",
     "answers": ["made"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。時計は「作られる」という受動の関係。\n2.【YouTubeソース】補足論理：「日本で作られた」という受動のまとまりであるため、名詞watchesの後ろに過去分詞madeを配置する。"
+    "explanation": "1.【塾技】文法論理：Whyによる疑問文を、無生物主語構文 make + O + 原形不定詞 の形へ書き換える。時制は過去。\n2.【YouTubeソース】補足論理：過去の意思変更の理由を、原因となる事象が彼女に行為を強いたという過去の使役構造（made）へ転換する。"
   },
   {
-    "id": "p78-r2-11",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(11) Many Japanese live in houses [[ ]] of wood. ( build )",
-    "answers": ["built"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。家は「建てられる」という受動の関係。\n2.【YouTubeソース】補足論理：「木で建てられた」という受動のまとまりであるため、名詞housesの後ろに過去分詞builtを配置する。"
-  },
-  {
-    "id": "p78-r2-12",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(12) The girl [[ ]] over there is my sister. ( swim )",
-    "answers": ["swimming"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少女が「泳いでいる」という能動の関係。\n2.【YouTubeソース】補足論理：「向こうで泳いでいる」というまとまりで名詞girlを後置修飾するため、mを重ねた現在分詞swimmingを配置する。"
-  },
-  {
-    "id": "p78-r2-13",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(13) Don't touch the [[ ]] wall. ( paint )",
-    "answers": ["painted"],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する過去分詞。壁は「塗られる」という受動の関係。\n2.【YouTubeソース】補足論理：1語で名詞wallを修飾し、完了または受動の状態を示すため過去分詞paintedを名詞の前に配置する。"
-  },
-  {
-    "id": "p78-r2-14",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(14) Look at the stars [[ ]] in the sky. ( shine )",
-    "answers": ["shining"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。星が「輝いている」という能動の関係。\n2.【YouTubeソース】補足論理：「空で輝いている」というまとまりで名詞starsを後置修飾するため、現在分詞shiningを配置する。"
-  },
-  {
-    "id": "p78-r2-15",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(15) This is the dictionary [[ ]] to me by my uncle. ( give )",
-    "answers": ["given"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。辞書は「与えられる」という受動の関係。\n2.【YouTubeソース】補足論理：「おじによって私に与えられた」という受動のまとまりであるため、名詞dictionaryの後ろに過去分詞givenを配置する。"
-  },
-  {
-    "id": "p78-r2-16",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(16) This is the fish [[ ]] in the lake. ( catch )",
-    "answers": ["caught"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。魚は「捕まえられる」という受動の関係。\n2.【YouTubeソース】補足論理：「湖で捕まえられた」という受動のまとまりであるため、名詞fishの後ろに過去分詞caughtを配置する。"
-  },
-  {
-    "id": "p78-r2-17",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(17) We found him [[ ]] on the bench. ( lie )",
-    "answers": ["lying"],
-    "explanation": "1.【塾技】文法論理：目的格補語になる分詞。find + O + doing（Oが～しているのがわかる）の構文。\n2.【YouTubeソース】補足論理：目的語himと分詞の間に「彼が横たわっている」という能動的な主述関係があるため、ieをyに変えてingを付加したlyingを適用する。"
-  },
-  {
-    "id": "p78-r2-18",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(18) I found Mt. Fuji [[ ]] with snow. ( cover )",
-    "answers": ["covered"],
-    "explanation": "1.【塾技】文法論理：目的格補語になる分詞。find + O + done（Oが～されているのがわかる）の構文。\n2.【YouTubeソース】補足論理：目的語Mt. Fujiは雪で「覆われている（受動）」状態であるため、過去分詞coveredを適用し補語とする。"
-  },
-  {
-    "id": "p78-r2-19",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(19) I am sorry to have kept you [[ ]]. ( wait )",
-    "answers": ["waiting"],
-    "explanation": "1.【塾技】文法論理：目的格補語になる分詞。keep + O + doing（Oを～させておく）の構文。\n2.【YouTubeソース】補足論理：目的語youと分詞の間に「あなたが待っている」という能動的な主述関係があるため、現在分詞waitingを適用する。"
-  },
-  {
-    "id": "p78-r2-20",
-    "sectionName": "練成問題 2",
-    "type": "fill",
-    "text": "(20) He stood [[ ]] for the bus. ( wait )",
-    "answers": ["waiting"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。stand ~ing（立って～している）。\n2.【YouTubeソース】補足論理：主語の状態を説明する現在分詞であり、「バスを待ちながら立っていた」という付帯的動作をing形で表現する。"
-  },
-  {
-    "id": "p79-r3-1",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(1) 向こうでラジオを聞いている少女はわたしの妹です。<br>The girl [[ ]] [[ ]] the radio over there is my sister.",
-    "answers": ["listening", "to"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する現在分詞。少女が「聞いている」という能動の関係。\n2.【YouTubeソース】補足論理：「ラジオを聞いている」はlisten to the radio。2語以上のまとまりであるため、名詞girlの後方に現在分詞listening toを配置して修飾する。"
-  },
-  {
-    "id": "p79-r3-2",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(2) これはグリーンさんが書いた小説です。<br>This is the novel [[ ]] [[ ]] Mr. Green.",
-    "answers": ["written", "by"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。小説は「書かれる」という受動の関係。\n2.【YouTubeソース】補足論理：「グリーンさんによって書かれた」という受動のまとまりであるため、名詞novelの後ろに過去分詞writtenを配置し、行為者を示すbyを続ける。"
-  },
-  {
-    "id": "p79-r3-3",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(3) あの飛んでいる鳥をごらんなさい。<br>Look at those [[ ]] birds.",
-    "answers": ["flying"],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する現在分詞。鳥が「飛んでいる」という能動の関係。\n2.【YouTubeソース】補足論理：1語で名詞birdsを修飾し、進行中の状態を示すため現在分詞flyingを名詞の前に配置する。"
-  },
-  {
-    "id": "p79-r3-4",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(4) 雪で覆われている山は富士山です。<br>The [[ ]] [[ ]] [[ ]] snow is Mt. Fuji.",
-    "answers": ["mountain", "covered", "with"],
-    "explanation": "1.【塾技】文法論理：名詞を修飾する過去分詞。山は「覆われる」という受動の関係。\n2.【YouTubeソース】補足論理：「雪で覆われている」という受動のまとまりであるため、名詞mountainの後ろに過去分詞coveredを配置し、連語に由来するwith snowを続ける。"
-  },
-  {
-    "id": "p79-r3-5",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(5) わたしはやさしい英語で書いてある物語を読んでみたいのです。<br>I'd like to read a [[ ]] [[ ]] [[ ]] easy English.",
-    "answers": ["story", "written", "in"],
-    "explanation": "1.【塾技】文法論理：名詞を後置修飾する過去分詞。物語は「書かれる」という受動の関係。\n2.【YouTubeソース】補足論理：「やさしい英語で書かれた」という受動の意味と2語以上のまとまりであることから、名詞storyの後ろに過去分詞writtenを配置し、言語を示す前置詞inを続ける。"
-  },
-  {
-    "id": "p79-r3-6",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(6) その少年はわたしのところへ走ってきました。<br>The boy came [[ ]] to me.",
-    "answers": ["running"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。come ~ing（～しながら来る）。\n2.【YouTubeソース】補足論理：主語の移動の様態を説明する現在分詞であり、「走りながら」という動作をing形で表現する。"
-  },
-  {
-    "id": "p79-r3-7",
-    "sectionName": "練成問題 3",
-    "type": "fill",
-    "text": "(7) ただそこにすわってテレビを見ているだけではいけません。<br>Don't just sit there [[ ]] TV.",
-    "answers": ["watching"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。sit ~ing（すわって～している）。\n2.【YouTubeソース】補足論理：主語の状態を説明する現在分詞であり、「テレビを見ながら座っている」という付帯的動作をing形で表現する。"
-  },
-  {
-    "id": "p80-h1-1",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(1) ⓐ Mike got a letter from his pen pal. His pen pal lives in Japan.<br>ⓑ Mike got a letter from his pen pal [[ ]] in Japan.",
-    "answers": ["living"],
-    "explanation": "1.【塾技】文法論理：2つの文を、現在分詞を用いた名詞の後置修飾によって1文に統合する。\n2.【YouTubeソース】補足論理：「日本に住んでいるペンパル」という能動的な修飾関係を構築するため、動詞livesを現在分詞livingに変換し名詞の後方に配置する。"
-  },
-  {
-    "id": "p80-h1-2",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(2) ⓐ I read an English book yesterday.<br>ⓑ I read a book [[ ]] in English yesterday.",
-    "answers": ["written"],
-    "explanation": "1.【塾技】文法論理：前置修飾の形容詞（an English book）を、過去分詞句による後置修飾に転換する。\n2.【YouTubeソース】補足論理：「英語で書かれた本」という受動のまとまりを明示的に作るため、名詞bookの後ろに過去分詞writtenを配置しin Englishを続ける。"
-  },
-  {
-    "id": "p80-h1-3",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(3) ⓐ I know a doctor. His name is John.<br>ⓑ I know a doctor [[ ]] John.",
-    "answers": ["named"],
-    "explanation": "1.【塾技】文法論理：2つの文を、過去分詞を用いた名詞の後置修飾によって1文に統合する。\n2.【YouTubeソース】補足論理：「ジョンと名付けられた医者」という受動的な修飾関係を構築するため、動詞nameを過去分詞namedに変換し名詞の後方に配置する。"
-  },
-  {
-    "id": "p80-h1-4",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(4) ⓐ Betty drew two pictures. They were very nice.<br>ⓑ The two pictures [[ ]] [[ ]] Betty were very nice.",
-    "answers": ["drawn", "by"],
-    "explanation": "1.【塾技】文法論理：能動態の文を、過去分詞句を用いた名詞の後置修飾構造に組み込む。\n2.【YouTubeソース】補足論理：「ベティによって描かれた絵」という受動のまとまりを作るため、名詞picturesの後ろに過去分詞drawnを配置し、行為者を示すbyを続ける。"
-  },
-  {
-    "id": "p80-h1-5",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(5) ⓐ Who is the girl in the room? She is playing the violin.<br>ⓑ Who is the girl [[ ]] the violin in the room?",
-    "answers": ["playing"],
-    "explanation": "1.【塾技】文法論理：2つの文を、現在分詞を用いた名詞の後置修飾によって1文に統合する。\n2.【YouTubeソース】補足論理：「バイオリンを弾いている少女」という能動的な修飾関係を構築するため、現在進行形のplayingを名詞girlの後方に直接配置して修飾する。"
-  },
-  {
-    "id": "p80-h1-6",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(6) ⓐ I was interested in the movie.<br>ⓑ The movie was [[ ]] [[ ]] me.",
-    "answers": ["interesting", "to"],
-    "explanation": "1.【塾技】文法論理：感情・心理を表す動詞の分詞形容詞化。映画は「（人に）興味を持たせる側」なので現在分詞を用いる。\n2.【YouTubeソース】補足論理：事象が人に影響を与える能動的関係には現在分詞interestingを選択し、対象を示す前置詞toで関係を構築する。"
-  },
-  {
-    "id": "p80-h1-7",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(7) ⓐ I was bored by the speech and I became sleepy.<br>ⓑ The [[ ]] speech [[ ]] [[ ]] sleepy.",
-    "answers": ["boring", "made", "me"],
-    "explanation": "1.【塾技】文法論理：感情を表す動詞の分詞形容詞化と、make + O + C の第5文型の統合。\n2.【YouTubeソース】補足論理：スピーチは人を「退屈させる側」なので現在分詞boringを用い、第5文型makeによって「私（me）を眠くさせた」という因果関係を構築する。"
-  },
-  {
-    "id": "p80-h1-8",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(8) ⓐ Look at the iron gate.<br>ⓑ Look at the gate [[ ]] [[ ]] iron.",
-    "answers": ["made", "of"],
-    "explanation": "1.【塾技】文法論理：前置修飾の形容詞（iron）を、過去分詞句による後置修飾に転換する。\n2.【YouTubeソース】補足論理：「鉄で作られた門」という受動のまとまりを明示的に作るため、名詞gateの後ろに過去分詞madeを配置し、材料を示す前置詞ofを続ける。"
-  },
-  {
-    "id": "p80-h1-9",
-    "sectionName": "発展問題 1",
-    "type": "fill",
-    "text": "(9) ⓐ They spoke to a boy. He lay on the grass.<br>ⓑ They spoke to a boy [[ ]] [[ ]] the grass.",
-    "answers": ["lying", "on"],
-    "explanation": "1.【塾技】文法論理：2つの文を、現在分詞を用いた名詞の後置修飾によって1文に統合する。\n2.【YouTubeソース】補足論理：「草の上に横たわっている少年」という能動的な修飾関係を構築するため、動詞lay（lieの過去形）を現在分詞lyingに変換し名詞の後方に配置する。"
-  },
-  {
-    "id": "p80-h2-1",
+    "id": "p147-h2-10",
     "sectionName": "発展問題 2",
     "type": "fill",
-    "text": "(1) これは、わたしが昨年の夏泳ぎに行ったとき彼にとってもらった写真です。<br>This is the [[ ]] [[ ]] by him when I went [[ ]] last summer.",
-    "answers": ["[picture / photograph]", "taken", "swimming"],
-    "explanation": "1.【塾技】文法論理：名詞を後置修飾する過去分詞と、go ~ing（～しに行く）の慣用表現の複合。\n2.【YouTubeソース】補足論理：「彼によって撮られた写真」という受動の修飾構造を作り、後半で「泳ぎに行った」というレジャー目的の移動をgo swimmingで表現する。"
+    "text": "次の各組の英文がほぼ同じ内容になるように、空所をうめなさい。<br>ⓐ You ought to report it to him immediately.<br>ⓑ You should let him [[ ]] about it at [[ ]].",
+    "answers": ["know", "once"],
+    "explanation": "1.【塾技】文法論理：ought to do（〜すべきだ）の文を、let + O + 原形不定詞 を用いた表現（知らせるべきだ）へ書き換える。immediately は at once へ。\n2.【YouTubeソース】補足論理：報告という行為を「彼に知ることを許す（知らせる）」という定型的な使役構造（let him know）へと論理的に転換し、意味を維持する。"
   },
+
+  // --- 発展問題 3 ---
   {
-    "id": "p80-h2-2",
-    "sectionName": "発展問題 2",
-    "type": "fill",
-    "text": "(2) 駒ヶ岳の頂上から見る日の出はとても美しい。<br>The [[ ]] sun [[ ]] from the top of Mt. Komagatake is very beautiful.",
-    "answers": ["rising", "seen"],
-    "explanation": "1.【塾技】文法論理：前置修飾の現在分詞と、後置修飾の過去分詞の複合。「昇っている太陽」「～から見られる」。\n2.【YouTubeソース】補足論理：日の出は「昇る（能動）」ためrising sunとし、その太陽が「見られる（受動）」ため過去分詞seenを後置して修飾関係を構築する。"
-  },
-  {
-    "id": "p80-h2-3",
-    "sectionName": "発展問題 2",
-    "type": "fill",
-    "text": "(3) いいと言うまで目を閉じてなさい。<br>Keep your eyes [[ ]] until I [[ ]] you to open them.",
-    "answers": ["[closed / shut]", "tell"],
-    "explanation": "1.【塾技】文法論理：keep + O + done（Oを～された状態にしておく）の第5文型と、tell + O + to doの構文。\n2.【YouTubeソース】補足論理：目は自らの意志で「閉じられる（受動）」対象であるため過去分詞closedを補語とし、後半で「人に～するように言う」第5文型的構造を形成する。"
-  },
-  {
-    "id": "p80-h2-4",
-    "sectionName": "発展問題 2",
-    "type": "fill",
-    "text": "(4) 大勢の人が門のところで立って待っていた。<br>A lot of people [[ ]] [[ ]] at the gate.",
-    "answers": ["stood", "waiting"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。stand ~ing（立って～している）。\n2.【YouTubeソース】補足論理：主語の状態を説明する現在分詞であり、「待ちながら立っていた」という付帯的動作を過去形のstoodとing形で表現する。"
-  },
-  {
-    "id": "p80-h2-5",
-    "sectionName": "発展問題 2",
-    "type": "fill",
-    "text": "(5) わたしの妹は音楽を聞いて1時間過ごしました。<br>My sister spent an hour [[ ]] to music.",
-    "answers": ["listening"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。spend + 時間 + ~ing（～して時間を過ごす）。\n2.【YouTubeソース】補足論理：時間を費やす際の付帯的な動作を説明するため、動詞spendの構文要素として現在分詞listeningを配置する。"
-  },
-  {
-    "id": "p80-h2-6",
-    "sectionName": "発展問題 2",
-    "type": "fill",
-    "text": "(6) ミカは宿題をするのに忙しい。<br>Mika is [[ ]] [[ ]] her homework.",
-    "answers": ["busy", "[doing / with]"],
-    "explanation": "1.【塾技】文法論理：分詞を使った慣用表現。be busy ~ing（～するのに忙しい）。\n2.【YouTubeソース】補足論理：be busyの後ろには動作の進行を示すing形を続ける定型的な表現構造に従う。"
-  },
-  {
-    "id": "p81-h3-1",
+    "id": "p147-h3-1",
     "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "日本製の車が世界中で使われています。<br>[[ ]]。",
-    "pool": ["are", "in", "made", "cars", "Japan", "used", "the world", "all over"],
-    "answers": ["Cars made in Japan are used all over the world."],
-    "explanation": "1.【塾技】文法論理：過去分詞句を用いた名詞の後置修飾と、受動態の述語動詞の組み合わせ。\n2.【YouTubeソース】補足論理：「日本で作られた車」という主語をCars made in Japanで構築し、それが「使われている」という受動態are usedへと接続する語順論理。"
-  },
-  {
-    "id": "p81-h3-2",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "これはわたしたちの先生が選んだ本です。〔1語不足〕<br>[[ ]]。",
-    "pool": ["teacher", "is", "book", "by", "this", "our", "the"],
-    "answers": ["This is the book [chosen / selected] by our teacher."],
-    "explanation": "1.【塾技】文法論理：過去分詞句を用いた名詞の後置修飾構造。\n2.【YouTubeソース】補足論理：「私たちの先生によって選ばれた本」という受動のまとまりを作るため、不足している過去分詞chosen（またはselected）を補い名詞bookの後方に配置する。"
-  },
-  {
-    "id": "p81-h3-3",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "ベッドで眠っている赤ちゃんは生後6か月です。<br>[[ ]]。",
-    "pool": ["old", "sleeping", "six", "the bed", "is", "in", "the baby", "months"],
-    "answers": ["The baby sleeping in the bed is six months old."],
-    "explanation": "1.【塾技】文法論理：現在分詞句を用いた名詞の後置修飾構造を主語とする。\n2.【YouTubeソース】補足論理：「ベッドで眠っている赤ちゃん」という能動的な修飾関係をThe baby sleeping in the bedで構築し、述語isに接続する。"
-  },
-  {
-    "id": "p81-h3-4",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "おばからいただいた鞄が気に入っています。<br>[[ ]]。",
-    "pool": ["to", "aunt", "I", "the", "like", "by", "me", "given", "bag", "my"],
-    "answers": ["I like the bag given to me by my aunt."],
-    "explanation": "1.【塾技】文法論理：過去分詞句を用いた名詞の後置修飾構造。\n2.【YouTubeソース】補足論理：「おばによって私に与えられた鞄」という受動のまとまりを作るため、名詞bagの後方にgiven to me by my auntを配置して修飾する。"
-  },
-  {
-    "id": "p81-h3-5",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "君はポケットに手を入れて歩いている男の子を知っていますか。<br>[[ ]]？",
-    "pool": ["know", "in", "do", "with", "his", "the boy", "pockets", "his hands", "you", "walking"],
-    "answers": ["Do you know the boy walking with his hands in his pockets?"],
-    "explanation": "1.【塾技】文法論理：現在分詞句による名詞の後置修飾と、付帯状況を表すwith + O + Cの複合。\n2.【YouTubeソース】補足論理：「ポケットに手を入れた状態で歩いている少年」という修飾関係を、walking with his hands in his pocketsという分詞句で構築し名詞boyの後方に配置する。"
-  },
-  {
-    "id": "p81-h3-6",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "パーティーに招待された人々は皆、楽しんで歌を歌いました。<br>All the [[ ]] songs.",
-    "pool": ["invited", "singing", "the party", "to", "people", "enjoyed"],
-    "answers": ["people invited to the party enjoyed singing"],
-    "explanation": "1.【塾技】文法論理：過去分詞句を用いた名詞の後置修飾構造と、動名詞を目的語にとる動詞enjoyの組み合わせ。\n2.【YouTubeソース】補足論理：「パーティーに招待された人々」を受動の過去分詞句invited to the partyで構築し、動詞enjoyの目的語として動名詞singingを接続する。"
-  },
-  {
-    "id": "p81-h3-7",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "迷子になった子供は、両親のもとに連れ戻された。<br>[[ ]]。",
-    "pool": ["child", "her", "lost", "parents", "the", "to", "returned", "was"],
-    "answers": ["The lost child was returned to her parents."],
-    "explanation": "1.【塾技】文法論理：名詞を前置修飾する過去分詞と、受動態の述語動詞。\n2.【YouTubeソース】補足論理：「迷子になった（失われた）」は1語の修飾要素であるため名詞childの前にlostを配置し、述語として受動態was returnedを接続する。"
-  },
-  {
-    "id": "p81-h3-8",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "彼は店内にいる間エンジンをかけっ放しにしていた。<br>He [[ ]] was in the store.",
-    "pool": ["while", "running", "he", "engine", "left", "the"],
-    "answers": ["left the engine running while he"],
-    "explanation": "1.【塾技】文法論理：leave + O + doing（Oを～したままにしておく）の第5文型。\n2.【YouTubeソース】補足論理：エンジンが「稼働している（能動）」状態を保つため、leaveの目的格補語に現在分詞runningを配置し、接続詞whileによる副詞節を続ける。"
-  },
-  {
-    "id": "p81-h3-9",
-    "sectionName": "発展問題 3",
-    "type": "reorder",
-    "text": "わたしは彼女がラケットを手に歩いているのに気がついた。<br>[[ ]]。",
-    "pool": ["hand", "racket", "found", "in", "with", "I", "her", "her", "walking", "a"],
-    "answers": ["I found her walking with a racket in her hand."],
-    "explanation": "1.【塾技】文法論理：find + O + doing（Oが～しているのに気づく）の第5文型と、付帯状況のwithの複合。\n2.【YouTubeソース】補足論理：目的語herと分詞の間に「彼女が歩いている」という能動の主述関係を構築し、付帯的状況を示すwith句を後続させて意味を完成させる。"
-  },
-  {
-    "id": "p81-h4-1",
-    "sectionName": "発展問題 4",
     "type": "translation",
-    "text": "向こうで車を洗っている人は君のお父さんですか。",
-    "answers": ["Is the man washing [a / the] car over there your father?"],
-    "explanation": "1.【塾技】文法論理：現在分詞句を用いた名詞の後置修飾構造を主語とする疑問文。\n2.【YouTubeソース】補足論理：「向こうで車を洗っている男性」という能動的な修飾関係を、washing a car over thereという分詞句で構築し名詞manを後置修飾する。"
+    "text": "次の日本文を英語に直しなさい。<br>(1) わたしは彼が歯を磨くのを1度も見たことがない。",
+    "answers": ["I have never seen him brush his teeth."],
+    "explanation": "1.【塾技】文法論理：現在完了形の経験用法（never）と、知覚動詞 see + O + 原形不定詞 の複合構造。\n2.【YouTubeソース】補足論理：彼が歯を磨くという一連の能動的動作を原形不定詞で捉え、それを過去から現在に至るまでの未経験の事実として記述する。"
   },
   {
-    "id": "p81-h4-2",
-    "sectionName": "発展問題 4",
+    "id": "p147-h3-2",
+    "sectionName": "発展問題 3",
     "type": "translation",
-    "text": "わたしは父が新聞を読んでいるのを見つけました。",
-    "answers": ["I found my father reading [a / the] [newspaper / paper]."],
-    "explanation": "1.【塾技】文法論理：find + O + doing（Oが～しているのがわかる）の第5文型。\n2.【YouTubeソース】補足論理：目的語である父親と「新聞を読んでいる」という行為の間に能動的な主述関係が成り立つため、目的格補語として現在分詞readingを配置する。"
+    "text": "次の日本文を英語に直しなさい。<br>(2) わたしは子供たちが楽しそうに笑っているのを聞きました。",
+    "answers": ["I heard children laughing [happily / merrily]."],
+    "explanation": "1.【塾技】文法論理：知覚動詞 hear + O + 現在分詞 の構文で「Oが〜している（進行中の動作）を聞く」を表す。\n2.【YouTubeソース】補足論理：子供たちが現在進行で笑っているという能動的かつ継続的な状態の知覚を、現在分詞（laughing）を用いて客観的に描写する論理。"
   },
   {
-    "id": "p81-h4-3",
-    "sectionName": "発展問題 4",
+    "id": "p147-h3-3",
+    "sectionName": "発展問題 3",
     "type": "translation",
-    "text": "彼はドイツ製のカメラを持っています。",
-    "answers": ["He has a camera made in Germany."],
-    "explanation": "1.【塾技】文法論理：過去分詞句を用いた名詞の後置修飾構造。\n2.【YouTubeソース】補足論理：「ドイツで作られたカメラ」という受動のまとまりを作るため、名詞cameraの後ろに過去分詞madeを配置し場所を示すin Germanyを続ける。"
+    "text": "次の日本文を英語に直しなさい。<br>(3) わたしはバスの中で財布を盗まれました。",
+    "answers": ["I [had / got] my purse stolen [in / on] [a / the] bus."],
+    "explanation": "1.【塾技】文法論理：使役・被害動詞 have [get] + O + 過去分詞 の構文で「Oを〜される（被害）」を表す。\n2.【YouTubeソース】補足論理：自分を主語に据え、自己の所有物（my purse）が他者によって「盗まれる」状態を被ったという構造的受難を過去分詞で構成する。"
   },
   {
-    "id": "p81-h4-4",
-    "sectionName": "発展問題 4",
+    "id": "p147-h3-4",
+    "sectionName": "発展問題 3",
     "type": "translation",
-    "text": "彼は友達を2時間待たせたままにしました。",
-    "answers": ["He kept his [friend / friends] waiting for two hours."],
-    "explanation": "1.【塾技】文法論理：keep + O + doing（Oを～させておく）の第5文型。\n2.【YouTubeソース】補足論理：目的語の友達と「待つ」という行為の間に能動の主述関係が成り立つため、keepの目的格補語として現在分詞waitingを配置する。"
+    "text": "次の日本文を英語に直しなさい。<br>(4) 彼がいつ来るかわかりませんが、来たらすぐにわたしに知らせてください。",
+    "answers": ["I don't know when he will come, but please let me know as soon as he comes."],
+    "explanation": "1.【塾技】文法論理：間接疑問文（when he will come）、使役動詞 let me know、および as soon as（〜するとすぐに）の複合構文。\n2.【YouTubeソース】補足論理：未確定の未来事象を間接疑問で提示し、その発生時の情報共有を定型使役構造（let me know）で要求する重層的論理展開。"
+  },
+  {
+    "id": "p147-h3-5",
+    "sectionName": "発展問題 3",
+    "type": "translation",
+    "text": "次の日本文を英語に直しなさい。<br>(5) わたしは列車の中で英字新聞を読んでいる紳士を見ました。",
+    "answers": ["I saw a gentleman reading [an English newspaper / an English paper] [in / on] the train."],
+    "explanation": "1.【塾技】文法論理：知覚動詞 see + O + 現在分詞 の構文で「Oが〜している（進行中の動作）を見る」を表す。\n2.【YouTubeソース】補足論理：紳士が新聞を読んでいるという能動的かつ進行中の行為を現在分詞で捉え、知覚の対象として第5文型の目的格補語に配置する。"
+  },
+  {
+    "id": "p147-h3-6",
+    "sectionName": "発展問題 3",
+    "type": "translation",
+    "text": "次の日本文を英語に直しなさい。<br>(6) わたしは学校へ来る途中で、風に帽子を吹きとばされたのです。",
+    "answers": ["I [had / got] [my / the] [hat / cap] [blown off / blown off by the wind] on [my / the] way to school."],
+    "explanation": "1.【塾技】文法論理：使役・被害動詞 have [get] + O + 過去分詞 の構文で「Oを〜される（被害）」を表す。\n2.【YouTubeソース】補足論理：自身の所有物（my hat）が風という外的要因によって「吹き飛ばされる」状態を被るという受難関係を、過去分詞（blown off）で構成する。"
   }
 ];
 
@@ -689,7 +577,7 @@ const workbookData = [
 // [A / B] や prefix[A] の形式を展開し、すべての組み合わせを自動生成する最強エンジンです
 function getVariants(targetStr) {
     let results = [targetStr];
-    const regex = /\[([^\]]+)\]/;
+    const regex = /([a-zA-Z0-9_'-]*)\[([^\]]+)\]/;
     let keepGoing = true;
     while(keepGoing) {
         keepGoing = false;
@@ -699,8 +587,14 @@ function getVariants(targetStr) {
             if (regex.test(s)) {
                 keepGoing = true;
                 let m = s.match(regex);
-                let insides = m[1].split(/[\/／,，]/).map(x => x.trim());
-                insides.forEach(opt => {
+                let prefix = m[1] || "";
+                let insides = m[2].split(/[\/／,，]/).map(x => x.trim());
+                
+                let opts = [];
+                if (prefix.length > 0 && !m[0].startsWith('[')) opts.push(prefix); // handle A[B]
+                insides.forEach(x => opts.push(x));
+                
+                opts.forEach(opt => {
                     nextResults.push(s.replace(m[0], opt));
                 });
             } else {
@@ -714,6 +608,7 @@ function getVariants(targetStr) {
 
 function normalize(s) {
     if (!s) return "";
+    // 英作文でユーザーが入力した不要な記号（ピリオドや括弧）を判定から除外
     return s.toLowerCase().replace(/[.?!,()（）]/g, "").replace(/\s+/g, " ").trim();
 }
 
@@ -724,7 +619,7 @@ function flexibleCheck(userStr, targetStr) {
 }
 
 // --- 最高傑作（Section5.html）完全準拠のUI制御システム ---
-let progressStatus = JSON.parse(localStorage.getItem('eng_jukugi_sec10_ultimate')) || {};
+let progressStatus = JSON.parse(localStorage.getItem('eng_jukugi_sec20_ultimate')) || {};
 let currentFilter = 'all';
 
 function init() {
@@ -752,10 +647,15 @@ function init() {
         let contentHTML = "";
         
         if (q.type === 'translation') {
-            const parts = q.text.split(/〔|（/);
-            contentHTML += `<span class="jp-prompt">${parts[0]}</span>`;
-            if(parts[1]) contentHTML += `<span class="instruction-text">〔${parts[1].replace(/〕|）/, "〕")}</span>`;
-            contentHTML += `<textarea class="full-input q-in-${q.id}" spellcheck="false" placeholder="英文を入力"></textarea>`;
+            let cleanPrompt = q.text.replace(/<br>/g, '<br><br>');
+            contentHTML += `<span class="jp-prompt">${cleanPrompt}</span>`;
+            
+            // 複数解答（①、②など）がある場合、自動的に入力ボックスを増やす
+            q.answers.forEach((ans, idx) => {
+                let placeholder = ans.match(/[ぁ-んァ-ヶ]/) ? `日本語を入力` : `英文を入力`;
+                if(q.answers.length > 1) placeholder += ` (解答 ${idx+1})`;
+                contentHTML += `<textarea class="full-input q-in-${q.id}" data-idx="${idx}" spellcheck="false" placeholder="${placeholder}"></textarea>`;
+            });
         } 
         else if (q.type === 'reorder') {
             const parts = q.text.split('<br>');
@@ -763,7 +663,6 @@ function init() {
             const baseEng = (parts[1] || "").replace(/\[\[\s*\]\]/g, `<div class="answer-zone" id="zone-${q.id}"></div>`);
             contentHTML += `<span class="jp-prompt">${jp}</span>`;
             
-            // 【復活】不足語入力用のUI
             if (q.text.includes("不足")) {
                 contentHTML += `<div class="extra-word-ui" style="margin-bottom:10px; display:flex; gap:10px; align-items:center;">
                     <span style="font-size:0.9rem; font-weight:bold; color:#8b5cf6;">➕ 不足語追加:</span>
@@ -779,7 +678,7 @@ function init() {
         }
         else if (q.type === 'choice') {
             const parts = q.text.split('<br>');
-            contentHTML += `<span class="jp-prompt">${parts[0].replace(/\[\[\s*\]\]/g, '<span class="blank-line"></span>')}</span>`;
+            contentHTML += `<span class="jp-prompt">${parts[0].replace(/\[\[\s*\]\]/g, '<span class="blank-line"></span>').replace(/\(\s*\[\[\s*\]\]\s*\)/g, '<span class="blank-line"></span>')}</span>`;
             
             let choicesHTML = "";
             if (q.choices && q.choices.length > 0) {
@@ -818,13 +717,12 @@ function useT(id, w, tId, isExtra = false) {
     const z = document.getElementById(`zone-${id}`);
     const span = document.createElement('span'); 
     span.className = 'answer-word'; 
-    if (isExtra) span.classList.add('extra-word'); // 追加単語は色を変える
+    if (isExtra) span.classList.add('extra-word');
     span.innerText = w;
     span.onclick = () => { if(t) t.classList.remove('hidden'); span.remove(); };
     z.appendChild(span);
 }
 
-// 【復活】不足語をプールに追加する機能
 function addT(id) {
     const inp = document.getElementById(`extra-in-${id}`);
     if (!inp) return;
@@ -845,7 +743,7 @@ function addT(id) {
 }
 
 function updateCardStatus(id, s) {
-    progressStatus[id] = s; localStorage.setItem('eng_jukugi_sec10_ultimate', JSON.stringify(progressStatus));
+    progressStatus[id] = s; localStorage.setItem('eng_jukugi_sec20_ultimate', JSON.stringify(progressStatus));
     const card = document.getElementById(`card-${id}`);
     if(card) {
         card.className = `card q-card ${s}`;
@@ -857,20 +755,24 @@ function updateCardStatus(id, s) {
 
 function checkAnswer(id) {
     const q = workbookData.find(x => x.id === id); const fb = document.getElementById(`fb-${id}`);
-    let isCorrect = true; let userAns = "";
+    let isCorrect = true;
 
     if (q.type === 'choice') {
         const s = document.querySelector(`#choice-${id} .selected`);
-        userAns = s ? s.innerText : ""; if(!s || !userAns.includes(q.answers[0])) isCorrect = false;
+        let userAns = s ? s.innerText : ""; if(!s || !userAns.includes(q.answers[0])) isCorrect = false;
     } else if (q.type === 'reorder') {
-        userAns = Array.from(document.querySelectorAll(`#zone-${id} .answer-word`)).map(t => t.innerText.trim()).join(' ');
+        let userAns = Array.from(document.querySelectorAll(`#zone-${id} .answer-word`)).map(t => t.innerText.trim()).join(' ');
         if(!flexibleCheck(userAns, q.answers[0])) isCorrect = false;
     } else if (q.type === 'translation') {
-        userAns = document.querySelector(`.q-in-${id}`).value.trim();
-        if(!flexibleCheck(userAns, q.answers[0])) isCorrect = false;
+        const textareas = document.querySelectorAll(`textarea.q-in-${id}`);
+        textareas.forEach((ta, idx) => {
+            let uAns = ta.value.trim();
+            let tAns = q.answers[idx];
+            if(!flexibleCheck(uAns, tAns)) isCorrect = false;
+        });
     } else {
         const inps = document.querySelectorAll(`.q-in-${id}`);
-        const vals = Array.from(inps).map(i => i.value.trim()); userAns = vals.join(' ');
+        const vals = Array.from(inps).map(i => i.value.trim()); 
         vals.forEach((v, i) => { 
             const targetAns = q.answers[i] || q.answers[0];
             if(!flexibleCheck(v, targetAns)) isCorrect = false; 
@@ -880,9 +782,11 @@ function checkAnswer(id) {
     updateCardStatus(id, isCorrect ? 'correct' : 'retry');
     fb.className = `feedback show ${isCorrect ? 'correct-bg' : 'incorrect-bg'}`;
     
-    // Geminiに聞くボタンを含めたフィードバック表示
+    // 正解例の表示を綺麗にする処理
+    let displayAns = q.answers.map((a, i) => q.type === 'translation' && q.answers.length > 1 ? `①/②: ${a.replace(/\[|\]/g, '')}` : a.replace(/\[|\]/g, '')).join(' / ');
+
     fb.innerHTML = `<span class="fb-status-label">${isCorrect ? '⭕ 正解' : '❌ 不正解'}</span>
-                    <div><strong>正解例:</strong> ${q.answers.join(' / ')}</div>
+                    <div><strong>正解例:</strong> ${displayAns}</div>
                     <div class="youtube-box">${q.explanation.replace(/\n/g, '<br>')}</div>
                     <div style="display:flex; gap:10px; margin-top:15px;">
                         <button class="btn-check" style="flex:1; background:#64748b; margin-top:0; padding:12px; font-weight:bold; color:white; border:none; border-radius:12px; cursor:pointer;" onclick="resetQ('${id}')">もう一度解く</button>
@@ -901,7 +805,7 @@ function resetQ(id) {
 
 function askGemini(id) {
     const q = workbookData.find(x => x.id === id);
-    const prompt = `以下の英語の問題について、小学生でもわかるように優しく、ステップバイステップで論理的に解説してください。\n\n【問題】\n${q.text.replace(/<br>/g, '\n')}\n\n【正解】\n${q.answers.join(' / ')}\n\n【解説】\n${q.explanation}`;
+    const prompt = `以下の英語の問題について、小学生でもわかるように優しく、ステップバイステップで論理的に解説してください。\n\n【問題】\n${q.text.replace(/<br>/g, '\n')}\n\n【正解】\n${q.answers.join(' / ').replace(/\[|\]/g, '')}\n\n【解説】\n${q.explanation}`;
     
     navigator.clipboard.writeText(prompt).then(() => {
         alert('Geminiへの質問文をクリップボードにコピーしました！\nこのままチャット欄に貼り付けて質問してください。');
@@ -910,12 +814,11 @@ function askGemini(id) {
     });
 }
 
-// 🔄 学習履歴を完全にリセットする機能
 function resetAllProgress() {
     if (confirm("本当に学習履歴をすべてリセットしますか？\n（この操作は元に戻せません）")) {
         progressStatus = {};
-        localStorage.removeItem('eng_jukugi_sec10_ultimate');
-        init(); // 画面を再描画して初期状態に戻す
+        localStorage.removeItem('eng_jukugi_sec20_ultimate');
+        init(); 
     }
 }
 
@@ -925,7 +828,7 @@ function updateIncorrectSummary() {
     list.innerHTML = errs.length ? errs.map(id => `<span style="background:#fff; padding:3px 8px; border-radius:5px; border:1px solid #fda4af; font-size:0.8rem; margin:2px;">${id}</span>`).join('') : 'なし';
 }
 function updateProgressDisplay() {
-    const total = 72; const ok = Object.values(progressStatus).filter(s => s === 'correct').length;
+    const total = 52; const ok = Object.values(progressStatus).filter(s => s === 'correct').length;
     const per = Math.round((ok / total) * 100);
     document.getElementById('progress-text').innerText = `${ok} / ${total} (${per}%)`;
     document.getElementById('progress-fill').style.width = per + "%";
